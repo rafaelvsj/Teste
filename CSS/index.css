@@ -1,0 +1,116 @@
+/* Estilo para o chat */
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    z-index: 1000;
+    width: 400px; /* Largura do chat ajustada */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #ffffff; /* Cor de fundo */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#chat-box {
+    background-color: rgba(248, 249, 250, 0.9); /* Fundo com leve transparência */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    border-radius: 10px; /* Borda arredondada */
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    height: 500px; /* Altura do chat ajustada */
+    padding: 7px;
+    background-image: url('https://i.ibb.co/K6Lh1JR/DALL-E-2024-02-07-19-02-36-A-minimalist-and-abstract-background-design-suitable-for-a-chatbot-interf.webp'); /* Imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra todo o chat */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+#chat-header {
+    background-color: rgba(255, 64, 129, 0.9); /* Cabeçalho semitransparente com sombra */
+    color: white;
+    padding: 16px 16px; /* Ajusta o padding para alinhamento */
+    font-weight: bold;
+    border-top-left-radius: 10px; /* Borda arredondada no canto superior esquerdo */
+    border-top-right-radius: 10px; /* Borda arredondada no canto superior direito */
+}
+
+#minimize-chat {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px 20px;
+    background: transparent; /* Transparência para mostrar imagem de fundo */
+    margin-bottom: 10px;
+}
+
+#chat-messages div { /* Estilo para as mensagens enviadas */
+    color: #333; /* Cor escura para legibilidade */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente para as mensagens */
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px; /* Borda arredondada para as mensagens */
+    max-width: 80%; /* Largura máxima da mensagem */
+    word-wrap: break-word; /* Quebra de linha para textos longos */
+}
+
+#chat-input-container {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background: transparent; /* Transparência para mostrar imagem de fundo */
+    border-radius: 0 0 10px 10px; /* Borda arredondada no canto inferior */
+}
+
+#chat-input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0;
+    outline: none;
+}
+
+#send-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #ff4081;    /* Cor do ícone de enviar mensagem */
+}
+
+#send-button i {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+#send-button:hover {
+    opacity: 0.7; /* Efeito ao passar o mouse */
+}
+
+#open-chat {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px; /* Ajuste conforme necessário */
+}
+
+#open-chat img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Ícone do chat redondo */
+}
