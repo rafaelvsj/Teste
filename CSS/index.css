@@ -1,4 +1,4 @@
-/* Estilo para o chat k*/
+/* Estilo para o chat */
 #chat-container {
     position: fixed;
     bottom: 20px;
@@ -113,4 +113,16 @@
     width: 100%;
     height: auto;
     border-radius: 50%; /* Ícone do chat redondo */
+}
+#chat-box {
+    background-color: rgba(248, 249, 250, 0.9); /* Fundo com leve transparência */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+#chat-header {
+    background-color: rgba(255, 64, 129, 0.9); /* Cabeçalho semitransparente com sombra */
+}
+
+#chat-messages, #chat-input-container {
+    background-color: transparent;
 }
